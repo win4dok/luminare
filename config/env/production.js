@@ -13,7 +13,10 @@ module.exports = {
   // Binding to 127.0.0.1 is safer in production.
   host: process.env.HOST || '0.0.0.0',
   db: {
-    uri: process.env.MONGOHQ_URL || process.env.MONGODB_URI || 'mongodb://' + (process.env.DB_1_PORT_27017_TCP_ADDR || 'localhost') + '/mean',
+	  uri: 'mongodb://lmcosmodb:cIFwrFSaFjjgnWEgAML2nqa9P1VQa4MOVt2NftaBpGrBBGiabxfKPupa0deecnSkroqWYkWpYEfkCfU1FrFF5w==@lmcosmodb.documents.azure.com:10255/?ssl=true&sslverifycertificate=false'
+    /*
+	uri: process.env.MONGOHQ_URL || process.env.MONGODB_URI || 'mongodb://' + (process.env.DB_1_PORT_27017_TCP_ADDR || 'localhost') + '/mean',
+	*/
     options: {
       user: '',
       pass: ''
